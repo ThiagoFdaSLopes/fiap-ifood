@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./../../styles/global.css" />
-    <title>Pedidos</title>
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mensagens</title>
   </head>
   <body>
-    <header>
-      <p>Você está em: <span>Pedidos</span></p>
+     <!-- Inicio header -->
+     <header>
+      <p>Você está em: <span>Configurações - Cadastro de Funcionário</span></p>
       <div class="user-details">
         <img
           src="./../../assets/lightOrDark.svg"
           alt="Alterar modo claro ou escuro"
         />
-        <img
-          src="./../../assets/notificationIcon.svg"
-          alt="Aviso de notificação"
-        />
+        <img src="./../../assets//notificationIcon.svg" alt="Notificação" />
         <p>Usuário</p>
         <div class="perfil-user">
           <img src="./../../assets/user.png" alt="User profile" />
         </div>
       </div>
     </header>
+    <!-- Fim header -->
     <!-- Container Navigation Ifood -->
     <nav class="sidebar">
       <!-- Container Logo Ifood -->
@@ -63,7 +62,7 @@
             src="./../../assets//images/icons/mensagensIcon.svg"
             alt="home icon"
           />
-          <a href="/#">Mensagens</a>
+          <a href="/src/pages/mensagens/index.html">Mensagens</a>
         </li>
         <li>
           <img
@@ -118,7 +117,7 @@
             src="./../../assets//images/icons/relatorioIcon.svg"
             alt="home icon"
           />
-          <a href="/#">Relatórios</a>
+          <a href="/src/pages/Reports/index.html">Relatórios</a>
           <img
             src="./../../assets//images/icons/arowRight.svg"
             alt="home icon"
@@ -127,7 +126,7 @@
           <div class="sub-nav">
             <ul>
               <li>
-                <a href="/#">Download Relatórios</a>
+                <a href="/src/pages/Reports/index.html">Download Relatórios</a>
               </li>
               <li>
                 <a href="/#">Relatório de Pedidos</a>
@@ -165,7 +164,9 @@
                 <a href="/#">Contas de Recebimento</a>
               </li>
               <li>
-                <a href="/#">Cadastro de Funcionário</a>
+                <a href="/src/pages/CadastroFuncionario/index.html"
+                  >Cadastro de Funcionário</a
+                >
               </li>
               <li>
                 <a href="/#">Lista de Funcionário</a>
@@ -175,38 +176,18 @@
         </li>
       </ul>
     </nav>
-    <!--FIM SIDEBAR-->
-    <!--CONTENT INIT-->
     <main>
-      <table>
-        <thead>
-          <tr>
-            <th># Pedido</th>
-            <th>Data</th>
-            <th>Nome Cliente</th>
-            <th>Total</th>
-            <th>Status</th>
-            <th>Método de Pagamento</th>
-            <th>Categorias</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr data-href="../OrderDetails/index.html">
-            <td>00001</td>
-            <td>24//08/2024 - 13:15:44</td>
-            <td>Thiago Lopes</td>
-            <td>R$ 250,00</td>
-            <td>
-              <div class="status">
-                <p>Concluido</p>
-              </div>
-            </td>
-            <td>Cartão de crédito</td>
-            <td>Massas</td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="messages-list">
+        <ul id="options-filter">
+          <li><a href="#" id="filter-all">Exibir Todas</a></li>
+          <li><a href="#" id="filter-unread">Apenas Não Lidas</a></li>
+          <li><a href="#" id="filter-read">Apenas Lidas</a></li>
+        </ul>
+
+        <div id="container-messages"></div>
+      </div>
+      <div id="message-card"></div>
     </main>
+    <script src="./script.js"></script>
   </body>
-  <script src="./script.js"></script>
 </html>

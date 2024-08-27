@@ -204,6 +204,11 @@ header > p > span {
 main {
   margin: 40px;
   padding-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 main > p {
@@ -213,46 +218,111 @@ main > p {
   margin-top: 10px;
 }
 
-table {
-  width: 90vw;
-  margin-top: 20px;
-  border-collapse: collapse;
-  color: #fff; /* Cor do texto */
-}
-
-tr {
+.content-report {
+  max-width: 200px;
+  max-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   cursor: pointer;
 }
 
-th,
-td {
-  text-align: center;
-  padding: 10px;
+.content-report > img {
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
 }
 
-th {
-  border-bottom: 1px solid #fff; /* Linha inferior das células */
+.content-report > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Estilo do fundo da modal */
+.modal {
+  display: none; /* Esconde a modal inicialmente */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+/* Estilo do conteúdo da modal */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 20px;
+  width: 500px;
+  height: 250px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+/* Estilo do botão de fechar */
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 24px;
   font-weight: bold;
+  color: red;
+  cursor: pointer;
+}
+
+/* Estilo do formulário */
+.modal-content label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.modal-content input[type="date"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
   font-size: 16px;
 }
 
-td {
-  font-size: 14px;
-  text-align: center;
-}
-
-td:first-child {
-  padding-left: 0; /* Remover padding à esquerda para o primeiro item */
-}
-
-td:last-child {
-  padding-right: 0; /* Remover padding à direita para o último item */
-}
-
-.status {
-  background-color: #3aba47;
-  height: 20px;
-  text-align: center;
-  font-weight: 600;
+.modal-content button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.modal-content button:hover {
+  background-color: darkred;
+}
+
+.inputs-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radios > label {
+  margin-right: 10px;
 }

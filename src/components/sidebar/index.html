@@ -4,27 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./../../styles/global.css" />
-    <title>Pedidos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>SideBar</title>
   </head>
   <body>
-    <header>
-      <p>Você está em: <span>Pedidos</span></p>
-      <div class="user-details">
-        <img
-          src="./../../assets/lightOrDark.svg"
-          alt="Alterar modo claro ou escuro"
-        />
-        <img
-          src="./../../assets/notificationIcon.svg"
-          alt="Aviso de notificação"
-        />
-        <p>Usuário</p>
-        <div class="perfil-user">
-          <img src="./../../assets/user.png" alt="User profile" />
-        </div>
-      </div>
-    </header>
     <!-- Container Navigation Ifood -->
     <nav class="sidebar">
       <!-- Container Logo Ifood -->
@@ -49,7 +37,7 @@
             src="./../../assets//images/icons/pedidosIcon.svg"
             alt="home icon"
           />
-          <a href="/src/pages/pedidos/index.html">Pedidos</a>
+          <a href="/#">Pedidos</a>
         </li>
         <li>
           <img
@@ -81,7 +69,6 @@
           <img
             src="./../../assets//images/icons/arowRight.svg"
             alt="home icon"
-            class="arrow"
           />
           <div class="sub-nav">
             <ul>
@@ -175,38 +162,6 @@
         </li>
       </ul>
     </nav>
-    <!--FIM SIDEBAR-->
-    <!--CONTENT INIT-->
-    <main>
-      <table>
-        <thead>
-          <tr>
-            <th># Pedido</th>
-            <th>Data</th>
-            <th>Nome Cliente</th>
-            <th>Total</th>
-            <th>Status</th>
-            <th>Método de Pagamento</th>
-            <th>Categorias</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr data-href="../OrderDetails/index.html">
-            <td>00001</td>
-            <td>24//08/2024 - 13:15:44</td>
-            <td>Thiago Lopes</td>
-            <td>R$ 250,00</td>
-            <td>
-              <div class="status">
-                <p>Concluido</p>
-              </div>
-            </td>
-            <td>Cartão de crédito</td>
-            <td>Massas</td>
-          </tr>
-        </tbody>
-      </table>
-    </main>
   </body>
   <script src="./script.js"></script>
 </html>

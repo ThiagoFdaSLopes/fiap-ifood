@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./../../styles/global.css" />
-    <title>Pedidos</title>
+    <title>Relatórios - Relatórios de Transações</title>
   </head>
   <body>
     <header>
-      <p>Você está em: <span>Pedidos</span></p>
+      <p>Você está em: <span> Relatórios - Relatórios de Transações</span></p>
       <div class="user-details">
         <img
           src="./../../assets/lightOrDark.svg"
@@ -63,7 +63,7 @@
             src="./../../assets//images/icons/mensagensIcon.svg"
             alt="home icon"
           />
-          <a href="/#">Mensagens</a>
+          <a href="/src/pages/mensagens/index.html">Mensagens</a>
         </li>
         <li>
           <img
@@ -118,7 +118,7 @@
             src="./../../assets//images/icons/relatorioIcon.svg"
             alt="home icon"
           />
-          <a href="/#">Relatórios</a>
+          <a href="/src/pages/Reports/index.html">Relatórios</a>
           <img
             src="./../../assets//images/icons/arowRight.svg"
             alt="home icon"
@@ -127,13 +127,17 @@
           <div class="sub-nav">
             <ul>
               <li>
-                <a href="/#">Download Relatórios</a>
+                <a href="/src/pages/Reports/index.html">Download Relatórios</a>
               </li>
               <li>
-                <a href="/#">Relatório de Pedidos</a>
+                <a href="/src/pages/ReportsOrders/index.html"
+                  >Relatório de Pedidos</a
+                >
               </li>
               <li>
-                <a href="/#">Relatórios Transações</a>
+                <a href="/src/pages/ReportsTransactions/index.html"
+                  >Relatórios Transações</a
+                >
               </li>
             </ul>
           </div>
@@ -175,37 +179,23 @@
         </li>
       </ul>
     </nav>
-    <!--FIM SIDEBAR-->
-    <!--CONTENT INIT-->
     <main>
+      <strong>0 pedidos encontrados</strong>
       <table>
         <thead>
           <tr>
-            <th># Pedido</th>
-            <th>Data</th>
-            <th>Nome Cliente</th>
-            <th>Total</th>
-            <th>Status</th>
-            <th>Método de Pagamento</th>
-            <th>Categorias</th>
+            <th>Periodo</th>
+            <th>Total Pedidos</th>
+            <th>Total Itens de Vendas</th>
+            <th>Total de Vendas</th>
+            <th>Comissão Total</th>
+            <th>Vendas Líquidas</th>
+            <th>Data Solicitada</th>
+            <th>Data Recebimento</th>
           </tr>
         </thead>
-        <tbody>
-          <tr data-href="../OrderDetails/index.html">
-            <td>00001</td>
-            <td>24//08/2024 - 13:15:44</td>
-            <td>Thiago Lopes</td>
-            <td>R$ 250,00</td>
-            <td>
-              <div class="status">
-                <p>Concluido</p>
-              </div>
-            </td>
-            <td>Cartão de crédito</td>
-            <td>Massas</td>
-          </tr>
-        </tbody>
       </table>
+      <p>Não encontramos nenhum registro</p>
     </main>
   </body>
   <script src="./script.js"></script>

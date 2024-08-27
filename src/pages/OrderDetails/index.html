@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./../../styles/global.css" />
-    <title>Pedidos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Detalhes de pedido</title>
   </head>
   <body>
+    <!--HEADER-->
     <header>
-      <p>Você está em: <span>Pedidos</span></p>
+      <p>Você está em: <span>Pedidos - Detalhes de pedido</span></p>
       <div class="user-details">
         <img
           src="./../../assets/lightOrDark.svg"
@@ -81,7 +88,6 @@
           <img
             src="./../../assets//images/icons/arowRight.svg"
             alt="home icon"
-            class="arrow"
           />
           <div class="sub-nav">
             <ul>
@@ -175,37 +181,37 @@
         </li>
       </ul>
     </nav>
-    <!--FIM SIDEBAR-->
-    <!--CONTENT INIT-->
+    <!--CONTAINER CONTENT-->
     <main>
+      <p>Dados do cliente:</p>
+      <div class="container-data">
+        <p>Nome:</p>
+        <p>CPF:</p>
+        <p>Endereço:</p>
+        <p>Complemento:</p>
+        <p>Bairro:</p>
+        <p>CEP:</p>
+      </div>
+
+      <p>Lista de produtos:</p>
       <table>
         <thead>
           <tr>
-            <th># Pedido</th>
-            <th>Data</th>
-            <th>Nome Cliente</th>
-            <th>Total</th>
-            <th>Status</th>
-            <th>Método de Pagamento</th>
-            <th>Categorias</th>
+            <td>Nome do produto</td>
+            <td>Quantidade</td>
+            <td>Preço unitário</td>
           </tr>
         </thead>
-        <tbody>
-          <tr data-href="../OrderDetails/index.html">
-            <td>00001</td>
-            <td>24//08/2024 - 13:15:44</td>
-            <td>Thiago Lopes</td>
-            <td>R$ 250,00</td>
-            <td>
-              <div class="status">
-                <p>Concluido</p>
-              </div>
-            </td>
-            <td>Cartão de crédito</td>
-            <td>Massas</td>
-          </tr>
-        </tbody>
       </table>
+      <!-- Adicionado estilização inline para aumentar apenas a distancia da tabela de cima ficar visivelmente melhor-->
+      <p style="margin-top: 60px">Dados adicionais:</p>
+      <div class="container-data">
+        <p>Valor do Frete:</p>
+        <p>Cupom aplicado:</p>
+        <p>Descontos:</p>
+        <p>Valor total dos produtos:</p>
+        <p>Valor total da compra:</p>
+      </div>
     </main>
   </body>
   <script src="./script.js"></script>

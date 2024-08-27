@@ -1,3 +1,112 @@
+.form-container {
+  width: 80%;
+  max-width: 800px;
+  margin-left: 50px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.employee-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-section {
+  margin-right: 20px;
+}
+
+.photo-section img {
+  cursor: pointer;
+}
+
+.required-section {
+  width: 80%;
+}
+
+.optional-section {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.section h5 {
+  margin-bottom: 10px;
+}
+
+.section-content {
+  margin-top: 5px;
+  padding: 20px 20px 30px;
+  border: 1px solid #000;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.input-group label,
+.input-group select {
+  margin-bottom: 5px;
+  color: #808080;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #808080af;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.three-items,
+.address,
+.contact {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.three-items {
+  justify-content: space-between;
+}
+
+.address {
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.contact {
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.submit-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #ff2116;
+}
+
 /* HEADER  */
 header {
   width: 90vw;
@@ -204,6 +313,11 @@ header > p > span {
 main {
   margin: 40px;
   padding-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 main > p {
@@ -211,48 +325,4 @@ main > p {
   color: #fff;
   margin-bottom: 10px;
   margin-top: 10px;
-}
-
-table {
-  width: 90vw;
-  margin-top: 20px;
-  border-collapse: collapse;
-  color: #fff; /* Cor do texto */
-}
-
-tr {
-  cursor: pointer;
-}
-
-th,
-td {
-  text-align: center;
-  padding: 10px;
-}
-
-th {
-  border-bottom: 1px solid #fff; /* Linha inferior das células */
-  font-weight: bold;
-  font-size: 16px;
-}
-
-td {
-  font-size: 14px;
-  text-align: center;
-}
-
-td:first-child {
-  padding-left: 0; /* Remover padding à esquerda para o primeiro item */
-}
-
-td:last-child {
-  padding-right: 0; /* Remover padding à direita para o último item */
-}
-
-.status {
-  background-color: #3aba47;
-  height: 20px;
-  text-align: center;
-  font-weight: 600;
-  border-radius: 5px;
 }
