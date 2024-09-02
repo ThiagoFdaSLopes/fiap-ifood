@@ -94,7 +94,7 @@ const colors = [
   
     calendar.addEvent(newEvent); // Adiciona o evento ao calendário
   
-    newTitle.value = "";
+     newTitle.value = "";
     newEventStartDate.value = "";
     newEventEndDate.value = "";
   
