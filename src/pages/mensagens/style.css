@@ -295,6 +295,39 @@ h1 {
   margin: 0 auto;
 }
 
+@media (min-width: 1300px){
+
+  main {
+    height: 90vh;
+    width: 90vw;
+    margin: 0 10rem;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    border-radius: 14px;
+  }
+
+  #container-messages {
+    font-size: 5rem;
+    gap: 2rem;
+  }
+
+  #message-card {
+    display: flex;
+    width: 40vw;
+    justify-content: space-around;
+  }
+  #message-card p {
+    font-size: 2.6rem;
+  }
+  #message-card h1{ 
+    font-size: 4rem;
+  }
+  #ifood-img {
+    width: 70%;
+  }
+}
+
 @media (max-width: 900px) {
   html {
     font-size: 57%;
